@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/Src/" />
-  <Folder Name="/Src/API/" />
+  <Folder Name="/Src/API/">
+    <Project Path="HR.LeaveManagement.API/HR.LeaveManagement.API.csproj" Id="b0c71e69-8624-4d83-a4ff-37cb536b1a89" />
+  </Folder>
   <Folder Name="/Src/COre/">
     <Project Path="HR.LeaveManagement.Application/HR.LeaveManagement.Application.csproj" />
     <Project Path="HRLeaveManagement.Domain/HR.LeaveManagement.Domain.csproj" />
