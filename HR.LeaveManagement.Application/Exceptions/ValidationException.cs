@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using FluentValidation.Results;
+
+namespace HR.LeaveManagement.Application.Exceptions
+{
+    public class ValidationException : ApplicationException
+    {
+        public List<string> Error { get; set; } = new List<string>();
+
+        public ValidationException(ValidationResult validationResult)
+        {
+            foreach (var error in validationResult.Errors)
+            {
+                Error.Add(error.ErrorMessage);
+            }
+        }
+    }
+}
