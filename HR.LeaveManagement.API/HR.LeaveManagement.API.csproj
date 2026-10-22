@@ -8,6 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj" />
+    <ProjectReference Include="..\HRLeaveManagementInfrastructure\HRLeaveManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\HRLeaveMangement.Persistence\HRLeaveMangement.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
