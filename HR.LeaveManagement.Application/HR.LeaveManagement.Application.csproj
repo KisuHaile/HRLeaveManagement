@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="16.2.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.2.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+	<PackageReference Include="MediatR" Version="14.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,3 +17,4 @@
   </ItemGroup>
 
 </Project>
+

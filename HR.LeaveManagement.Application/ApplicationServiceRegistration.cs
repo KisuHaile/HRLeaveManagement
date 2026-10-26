@@ -14,6 +14,10 @@ namespace HR.LeaveManagement.Application
             services.AddAutoMapper(_ => { }, Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
+            services.AddMediatR(cfg =>
+                cfg.RegisterServicesFromAssembly(
+                    typeof(YourHandler).Assembly));
+
             return services;
         }
     }
